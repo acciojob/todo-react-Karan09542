@@ -1,1 +1,37 @@
+.main {
+ width: 400px;
+ margin: auto;
+}
+
+p {
+    text-align: center;
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-item{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid orange;
+}
+
+input {
+    padding: 5px 10px;
+    border: 1px solid orange;
+}
+
+input:focus {
+    outline: 1px solid orange;
+}
+button {
+    background-color: orange;
+    border: 1px solid orange;
+    padding: 5px 10px;
+}
 
