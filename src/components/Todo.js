@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 const TodoItem = ({ todo, onClick }) => {
   return (
-    <div className="todo-item">
+    <li className="todo-item">
       <span>{todo}</span>
       <button onClick={onClick}>Delete</button>
-    </div>
+    </li>
   );
 };
 const Todo = () => {
@@ -28,7 +28,7 @@ const Todo = () => {
           Add
         </button>
       </div>
-      <div>
+      <ul>
         {todos.map((todo, index) => (
           <TodoItem
             todo={todo}
@@ -36,7 +36,7 @@ const Todo = () => {
             onClick={() => setDodos(todos.filter((_, i) => i !== index))}
           />
         ))}
-      </div>
+      </ul>
     </div>
   );
 };
